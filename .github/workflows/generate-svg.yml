@@ -16,9 +16,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install nwdiag
       - name: generate svg
-        run: nwdiag -T svg *.yml
+        run: nwdiag -T svg *.diag
       - name: save artifacts
         uses: actions/upload-artifact@v1
         with:
           name: artifacts
-          path: 'test.svg'
+          path: '*.svg'
