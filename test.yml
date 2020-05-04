@@ -1,0 +1,7 @@
+nwdiag {
+  network hello {
+    address = "1.1.1.0/24"
+    hello [address = "1/24"];
+  }
+}
+
